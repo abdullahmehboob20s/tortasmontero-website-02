@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header_img">
+          <a href="./index.html"><img src="./images/logo.png" alt="" /></a>
+        </div>
+
+        <div class="hamburger">
+          <i onclick="openNav()" class="fas fa-bars"></i>
+        </div>
+
+        <ul class="header_links">
+          <li><a class="header_link" href="./index.html">Home</a></li>
+          <li><a class="header_link" href="./tradicion.html">tradicion</a></li>
+          <li class="nav_parent active">
+            <span onclick="openMenue()" class="header_link unike"
+              >productos</span
+            >
+            <div class="nested">
+              <a
+                style="border-bottom: 1px solid white"
+                class="nested_child"
+                href="./Tortas-Curicanas.html"
+                >tortas curican</a
+              >
+              <a class="nested_child" href="./Pasteleria.html">Pastelería</a>
+            </div>
+          </li>
+          <li><a class="header_link" href="./salon.html">salon-de-te</a></li>
+          <li><a class="header_link" href="./Horarios.html">horarios</a></li>
+          <li>
+            <a class="header_link" href="./Contact.html">contacto</a>
+          </li>
+          <div class="line"></div>
+        </ul>
+      </div>
+      <div class="Horarios_main">
+        <h1 class="Horarios_title">Pasteleria</h1>
+
+        <div class="pasteleria_items">
+          <div class="pasteleria">
+            <div class="pasteleria_image">
+              <img src="./images/brazo-reina.jpg" alt="" />
+            </div>
+            <div class="pasteleria_content">
+              <h3>Brazo de Reina</h3>
+              <p>
+                Tradicional brazo de reina relleno con manjar, lo puede
+                encontrar cubierto con nueces, coco y también con delicioso
+                chocolate.
+              </p>
+            </div>
+          </div>
+
+          <div class="pasteleria">
+            <div class="pasteleria_image">
+              <img src="./images/dulces-chilenos.jpg" alt="" />
+            </div>
+            <div class="pasteleria_content">
+              <h3>Dulces Chilenos</h3>
+              <p>
+                Encontrará una gran variedad de dulces tradicionales Chilenos.
+                (Alfajor chancaca, empolvados, chilenitos y otros.)
+              </p>
+            </div>
+          </div>
+
+          <div class="pasteleria">
+            <div class="pasteleria_image">
+              <img src="./images/kuchen-frutas.jpg" alt="" />
+            </div>
+            <div class="pasteleria_content">
+              <h3>Kuchen de Frutas</h3>
+              <p>
+                Kuchen de frutas de la estación y deliciosa crema pastelera.
+              </p>
+            </div>
+          </div>
+
+          <div class="pasteleria">
+            <div class="pasteleria_image">
+              <img src="./images/pastel-velita.jpg" alt="" />
+            </div>
+            <div class="pasteleria_content">
+              <h3>Pastel Velita</h3>
+              <p>
+                Biscocho de chocolate con mermelada de frambuesa cubierto de
+                chocolate y deliciosa crema.
+              </p>
+            </div>
+          </div>
+
+          <div class="pasteleria">
+            <div class="pasteleria_image">
+              <img src="./images/pie-limon.jpg" alt="" />
+            </div>
+            <div class="pasteleria_content">
+              <h3>Pie de Limón</h3>
+              <p>Delicioso Pie de limón elaborado con antiguas recetas.</p>
+            </div>
+          </div>
+
+          <div class="pasteleria">
+            <div class="pasteleria_image">
+              <img src="./images/tortas_limon.jpg" alt="" />
+            </div>
+            <div class="pasteleria_content">
+              <h3>Torta Panqueque Limón</h3>
+              <p>
+                Torta de finas capas de panqueque rellena con exquisita crema de
+                limón y cubierta con suave merengue.
+              </p>
+            </div>
+          </div>
+
+          <div class="pasteleria">
+            <div class="pasteleria_image">
+              <img src="./images/torta_durazno.jpg" alt="" />
+            </div>
+            <div class="pasteleria_content">
+              <h3>Torta de Durazno</h3>
+              <p>
+                Torta de biscochuelo relleno con duraznos y suave crema de
+                lúcumas, decorada con frutas de la estación.
+              </p>
+            </div>
+          </div>
+
+          <div class="pasteleria">
+            <div class="pasteleria_image">
+              <img src="./images/torta_pina.jpg" alt="" />
+            </div>
+            <div class="pasteleria_content">
+              <h3>Torta de Piña</h3>
+              <p>
+                Torta de biscochuelo rellena con mermelada de piña y trozos de
+                piña en conserva, cubierta con crema chantilly y decorada con
+                trozos de piña y almendras tostadas.
+              </p>
+            </div>
+          </div>
+
+          <div class="pasteleria">
+            <div class="pasteleria_image">
+              <img src="./images/torta_manjarnuez.jpg" alt="" />
+            </div>
+            <div class="pasteleria_content">
+              <h3>Torta Manjar Nuez</h3>
+              <p>
+                Torta de Biscochuelo rellena con delicioso manjar con nueces,
+                cubierta con crema chantilly.
+              </p>
+            </div>
+          </div>
+
+          <div class="pasteleria">
+            <div class="pasteleria_image">
+              <img src="./images/tortas_limon.jpg" alt="" />
+            </div>
+            <div class="pasteleria_content">
+              <h3>Torta Panqueque Limón</h3>
+              <p>
+                Torta de finas capas de panqueque rellena con exquisita crema de
+                limón y cubierta con suave merengue.
+              </p>
+            </div>
+          </div>
+
+          <div class="pasteleria">
+            <div class="pasteleria_image">
+              <img src="./images/torta_naranja.jpg" alt="" />
+            </div>
+            <div class="pasteleria_content">
+              <h3>Torta Panqueque Naranja</h3>
+              <p>
+                Torta de delgadas capas de panqueque rellena con suave mermelada
+                de naranjas artesanal y manjar.
+              </p>
+            </div>
+          </div>
+
+          <div class="pasteleria">
+            <div class="pasteleria_image">
+              <img src="./images/torta_selvanegra.jpg" alt="" />
+            </div>
+            <div class="pasteleria_content">
+              <h3>Torta Selva Negra</h3>
+              <p>
+                Torta de biscocho de chocolate rellena con mermelada de guinda
+                artesanal y crema chantilly.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="goto_top">
+          <a href="#">
+            <i class="fas fa-chevron-up"></i>
+          </a>
+        </div>
+      </div>
+
+      <footer>
+        <p>
+          Copyright © 2014 · Todos los derechos reservados a Tortas Montero ·
+          Sitio Optimizado por Diseñamedios
+        </p>
+      </footer>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

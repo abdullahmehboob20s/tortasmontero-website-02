@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="modal">
+      <div class="black_screen"></div>
+      <div class="modal_item">
+        <button onclick="closeModal()">&#10006;</button>
+        <div class="modal_image">
+          <img id="modal_image" src="./images/imagen01-c0c63a77a0.jpg" alt="" />
+        </div>
+        <p id="modal_title">Salón De Té</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="header">
+        <div class="header_img">
+          <a href="./index.html"><img src="./images/logo.png" alt="" /></a>
+        </div>
+
+        <div class="hamburger">
+          <i onclick="openNav()" class="fas fa-bars"></i>
+        </div>
+
+        <ul class="header_links">
+          <li><a class="header_link" href="./index.html">Home</a></li>
+          <li><a class="header_link" href="./tradicion.html">tradicion</a></li>
+          <li class="nav_parent">
+            <span onclick="openMenue()" class="header_link unike"
+              >productos</span
+            >
+            <div class="nested">
+              <a
+                style="border-bottom: 1px solid white"
+                class="nested_child"
+                href="./Tortas-Curicanas.html"
+                >tortas curican</a
+              >
+              <a class="nested_child" href="./Pasteleria.html">Pastelería</a>
+            </div>
+          </li>
+          <li><a class="header_link" href="./salon.html">salon-de-te</a></li>
+          <li><a class="header_link" href="./Horarios.html">horarios</a></li>
+          <li class="active">
+            <a class="header_link" href="./Contact.html">contacto</a>
+          </li>
+          <div class="line"></div>
+        </ul>
+      </div>
+
+      <div class="contact_main">
+        <div class="goto_top">
+          <a href="#">
+            <i class="fas fa-chevron-up"></i>
+          </a>
+        </div>
+
+        <div class="contact_left">
+          <div class="sl_left_header">
+            <a href="./index.html">Home</a>
+            <span style="color: grey; font-size: 1rem; font-weight: 400">
+              &#x276F;</span
+            >
+            <p>Contacto</p>
+          </div>
+
+          <h2 class="contact_title">Contacto</h2>
+          <p class="contact_title_2">
+            Completa nuestro formulario y nos contactaremos con usted a la
+            brevedad.
+          </p>
+
+          <div class="contact_error">
+            <p>Ingrese un Email válido!</p>
+          </div>
+
+          <div class="contact_form">
+            <div class="contact_form_input">
+              <label for="nombre"
+                ><span class="btnRequired">*</span> Nombre</label
+              >
+              <input type="text" name="" id="nombre" />
+            </div>
+            <div class="contact_form_input">
+              <label for="Email"
+                ><span class="btnRequired">*</span> Email</label
+              >
+              <input type="text" name="" id="Email" />
+            </div>
+            <div class="contact_form_input">
+              <label for="Comuna/Ciudad"
+                ><span class="btnRequired">*</span> Comuna/Ciudad</label
+              >
+              <input type="text" name="" id="Comuna/Ciudad" />
+            </div>
+
+            <div class="contact_form_textarea">
+              <label for="Mensaje"
+                ><span class="btnRequired">*</span> Mensaje</label
+              >
+              <textarea name="" id="Mensaje" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="contact_form_image">
+              <label for="Introduce las Letras"> Introduce las Letras</label>
+              <div class="contact_form_img">
+                <img src="./images/securimage_show.png" alt="" />
+                <div class="contact_form_img_confirm">
+                  <input type="text" name="" id="Introduce las Letras" />
+                  <img src="./images/refresh-captcha.png" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="contact_submit_btn">
+              <button onclick="submitContactForm()">enviar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact_right">
+          <h2>Mapa de Ubicación</h2>
+          <img
+            onclick="openMap('https://www.google.cl/maps?q=Arturo+Prat+659+B,+Curic%C3%B3&ie=UTF8&hq&hnear=Arturo+Prat+659,+Curic%C3%B3,+Maule&t=m&z=14&ll=-34.984027,-71.243697&source=embed')"
+            src="./images/mapa-tortas.png"
+            alt=""
+          />
+
+          <a
+            href="https://www.google.cl/maps?q=Arturo+Prat+659+B,+Curic%C3%B3&ie=UTF8&hq&hnear=Arturo+Prat+659,+Curic%C3%B3,+Maule&t=m&z=14&ll=-34.984027,-71.243697&source=embed"
+            >Ver mapa más grande</a
+          >
+
+          <div class="contact_details">
+            <h3>Dirección</h3>
+
+            <div class="contact_d">
+              <p class="contact_d_title">Casa Central:</p>
+              <p class="contact_d_disc">Arturo Prat 659 B, Curicó.</p>
+            </div>
+            <div class="contact_d">
+              <p class="contact_d_title">Híper Líder:</p>
+              <p class="contact_d_disc">Local 10, Carmen 1196 , Curicó.</p>
+            </div>
+            <div class="contact_d">
+              <p class="contact_d_title">Líder Express:</p>
+              <p class="contact_d_disc">
+                Local 1, Av. Alessandri 1231, Curicó.
+              </p>
+            </div>
+
+            <div class="contact_d">
+              <p class="contact_d_title">Sucursal:</p>
+              <p class="contact_d_disc">Bernardo O’Higgins 758, Curicó.</p>
+            </div>
+
+            <div class="contact_d">
+              <p class="contact_d_title">Teléfono :</p>
+              <p class="contact_d_disc">(75) 2310149</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>
+          Copyright © 2014 · Todos los derechos reservados a Tortas Montero ·
+          Sitio Optimizado por Diseñamedios
+        </p>
+      </footer>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

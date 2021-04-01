@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header_img">
+          <a href="./index.html"><img src="./images/logo.png" alt="" /></a>
+        </div>
+
+        <div class="hamburger">
+          <i onclick="openNav()" class="fas fa-bars"></i>
+        </div>
+
+        <ul class="header_links">
+          <li><a class="header_link" href="./index.html">Home</a></li>
+          <li><a class="header_link" href="./tradicion.html">tradicion</a></li>
+          <li class="nav_parent active">
+            <span onclick="openMenue()" class="header_link unike"
+              >productos</span
+            >
+            <div class="nested">
+              <a
+                style="border-bottom: 1px solid white"
+                class="nested_child"
+                href="./Tortas-Curicanas.html"
+                >tortas curican</a
+              >
+              <a class="nested_child" href="./Pasteleria.html">Pastelería</a>
+            </div>
+          </li>
+          <li><a class="header_link" href="./salon.html">salon-de-te</a></li>
+          <li><a class="header_link" href="./Horarios.html">horarios</a></li>
+          <li>
+            <a class="header_link" href="./Contact.html">contacto</a>
+          </li>
+          <div class="line"></div>
+        </ul>
+      </div>
+
+      <div class="tortas_curicanas_main">
+        <h3 class="tortas_curicanas_main_title">
+          Tenemos una exquisita variedad de sabores como manjar, manjar nuez y
+          más. Conócelas!
+        </h3>
+
+        <div class="curicanas_sec_1">
+          <div>
+            <p>Ordenar por</p>
+            <button>producto +/- &#8681;</button>
+          </div>
+          <div>
+            <p>Resultados 1 - 4 de 4</p>
+            <select name="show" id="show">
+              <option value="10">10</option>
+              <option value="20">20</option>
+              <option value="40">40</option>
+              <option value="100">100</option>
+            </select>
+          </div>
+        </div>
+
+        <h1 class="products_title">Tortas Curicanas</h1>
+
+        <div class="curicanas_products">
+          <div class="curicanas_product">
+            <div class="curicanas_products_image">
+              <img src="./images/caja-tortas4.jpg" alt="" />
+            </div>
+            <div class="curicanas_products_content">
+              <a class="procut_title" href="./product-details.html">Caja de Tortas Montero</a>
+              <p>
+                Fina presentación de una selección Premiun con 3 variedades
+                (Manjar, Manjar Nuez y Manjar Almendras) pensada para ese regalo
+                especial que queremos hacer.
+              </p>
+              <a class="procut_btn" href="./product-details.html">detalles de producto</a>
+            </div>
+          </div>
+
+          <div class="curicanas_product">
+            <div class="curicanas_products_image">
+              <img src="./images/torta-curicana.jpg" alt="" />
+            </div>
+            <div class="curicanas_products_content">
+              <a class="procut_title" href="./product-details.html">Torta Curicana 100 grs.</a>
+              <p>
+                Deliciosas tortas curicanas en presentación individual de
+                100grs. La puede encontrar en sus 5 deliciosos sabores: manjar,
+                manjar nuez, manjar almendra, manjar naranja y alcayota.
+              </p>
+              <a class="procut_btn" href="./product-details.html">detalles de producto</a>
+            </div>
+          </div>
+          <div class="curicanas_product">
+            <div class="curicanas_products_image">
+              <img src="./images/torta-curicana1kilo5_450x450.jpg" alt="" />
+            </div>
+            <div class="curicanas_products_content">
+              <a class="procut_title" href="./product-details.html">Torta Curicana de 1 Kilo</a>
+              <p>
+                Tradicional torta curicana de 1 kilo. Las puede encontrar en sus
+                5 variedades, manjar, manjar almendras, manjar nuez, manjar
+                naranja y alcayota.
+              </p>
+              <a class="procut_btn" href="./product-details.html">detalles de producto</a>
+            </div>
+          </div>
+          <div class="curicanas_product">
+            <div class="curicanas_products_image">
+              <img src="./images/torta-curicana250gr5_450x450.jpg" alt="" />
+            </div>
+            <div class="curicanas_products_content">
+              <a class="procut_title" href="./product-details.html">Tortas Curicana 250 grs.</a>
+              <p>
+                Tortas Curicana de 250 gramos. Las puedes encontrar en sus 5
+                variedades, manjar, manjar con nueces, manjar con almendras,
+                manjar con naranja y alcayota.
+              </p>
+              <a class="procut_btn" href="./product-details.html">detalles de producto</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>
+          Copyright © 2014 · Todos los derechos reservados a Tortas Montero ·
+          Sitio Optimizado por Diseñamedios
+        </p>
+      </footer>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

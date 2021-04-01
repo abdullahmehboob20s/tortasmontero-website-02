@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="modal">
+      <div class="black_screen"></div>
+      <div class="modal_item">
+        <button onclick="closeModal()">&#10006;</button>
+        <div style="width: 330px; height: 225px" class="modal_image">
+          <img id="modal_image" src="./images/imagen01-c0c63a77a0.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="product_modal">
+        <div class="product_modal_black_screen"></div>
+      <div class="product_modal_items">
+        <button class="product_modal_close_btn" onclick="productModalCloseBtn()">&#10006;</button>
+        <h3 class="p_m_title">Haga una pregunta</h3>
+
+        <div class="p_m_disc">
+            <div class="p_m_disc_content">
+                <h4>Caja de Tortas Montero</h4>
+                <p>
+                    Fina presentación de una selección Premiun con 3 variedades (Manjar,
+                    Manjar Nuez y Manjar Almendras) pensada para ese regalo especial que
+                    queremos hacer.
+                </p>
+            </div>
+          <div class="p_m_disc_image">
+            <img class="p_m_image" src="./images/caja-tortas4.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="p_m_form">
+          <div class="p_m_form_inputs">
+            <label for="nomber">nomber :</label>
+            <input type="text" name="" id="nomber" />
+          </div>
+          <div class="p_m_form_inputs">
+            <label for="email">E-mail : </label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="p_m_form_textarea">
+              <label for="textarear">Escriba su pregunta...(min. 50, max. 2000 caracteres) </label>
+              <textarea name=""  onkeyup="textareaValue(this)" cols="30" rows="10"></textarea>
+              <div class="p_m_form_btns">
+                <button>Envié su pregunta</button>
+                <div class="p_m_form_btns_input">
+                  <p>Caracteres escritos:</p>
+                    <span class="char_count">0</span>
+                </div>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="header">
+        <div class="header_img">
+          <a href="./index.html"><img src="./images/logo.png" alt="" /></a>
+        </div>
+
+        <div class="hamburger">
+          <i onclick="openNav()" class="fas fa-bars"></i>
+        </div>
+
+        <ul class="header_links">
+          <li><a class="header_link" href="./index.html">Home</a></li>
+          <li><a class="header_link" href="./tradicion.html">tradicion</a></li>
+          <li class="nav_parent active">
+            <span onclick="openMenue()" class="header_link unike"
+              >productos</span
+            >
+            <div class="nested">
+              <a
+                style="border-bottom: 1px solid white"
+                class="nested_child"
+                href="./Tortas-Curicanas.html"
+                >tortas curican</a
+              >
+              <a class="nested_child" href="./Pasteleria.html">Pastelería</a>
+            </div>
+          </li>
+          <li><a class="header_link" href="./salon.html">salon-de-te</a></li>
+          <li><a class="header_link" href="./Horarios.html">horarios</a></li>
+          <li>
+            <a class="header_link" href="./Contact.html">contacto</a>
+          </li>
+          <div class="line"></div>
+        </ul>
+      </div>
+
+      <div class="product_details_main">
+        <div class="p_d_title">
+          <h2>Caja de Tortas Montero</h2>
+          <a href="./Tortas-Curicanas.html">Regresar a: Tortas Curicanas</a>
+        </div>
+
+        <div class="p_d_disc">
+          <p>
+            Fina presentación de una selección Premiun con 3 variedades (Manjar,
+            Manjar Nuez y Manjar Almendras) pensada para ese regalo especial que
+            queremos hacer.
+          </p>
+        </div>
+
+        <div class="p_d_images">
+          <img
+            onclick="openModal('./images/caja-tortas4.jpg','Salón de Té')"
+            src="./images/caja-tortas4.jpg"
+            alt=""
+          />
+          <button onclick="openProductDetailModal()">Haga una pregunta sobre el producto</button>
+        </div>
+
+        <div class="p_d_details">
+          <h3>Descripción</h3>
+          <p>
+            Fina presentación de una selección Premiun con 3 variedades (Manjar,
+            Manjar Nuez y Manjar Almendras) pensada para ese regalo especial que
+            queremos hacer.
+          </p>
+        </div>
+      </div>
+
+      <footer>
+        <p>
+          Copyright © 2014 · Todos los derechos reservados a Tortas Montero ·
+          Sitio Optimizado por Diseñamedios
+        </p>
+      </footer>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

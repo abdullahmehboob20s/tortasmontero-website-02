@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>real</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header_img">
+          <a href="./index.html"><img src="./images/logo.png" alt="" /></a>
+        </div>
+
+        <div class="hamburger">
+          <i onclick="openNav()" class="fas fa-bars"></i>
+        </div>
+
+        <ul class="header_links">
+          <li class="active" ><a class="header_link" href="./index.html">Home</a></li>
+          <li><a class="header_link" href="./tradicion.html">tradicion</a></li>
+          <li class="nav_parent">
+            <span onclick="openMenue()" class="header_link unike"
+              >productos</span
+            >
+            <div class="nested">
+              <a
+                style="border-bottom: 1px solid white"
+                class="nested_child"
+                href="./Tortas-Curicanas.html"
+                >tortas curican</a
+              >
+              <a class="nested_child" href="./Pasteleria.html">Pastelería</a>
+            </div>
+          </li>
+          <li ><a class="header_link" href="./salon.html">salon-de-te</a></li>
+          <li><a class="header_link" href="./Horarios.html">horarios</a></li>
+          <li ><a class="header_link" href="./Contact.html">contacto</a></li>
+          <div class="line"></div>
+        </ul>
+      </div>
+
+      <div class="main">
+        <div class="goto_top">
+          <a href="#">
+            <i class="fas fa-chevron-up"></i>
+          </a>
+        </div>
+
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/banner06.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/banner01.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/banner02.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/banner03.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/banner04.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/banner05.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/banner07.jpg" alt="" />
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="main_content">
+          <div class="main_content_1">
+            <div>
+              <img src="./images/comillas.png" alt="" />
+            </div>
+            <div>
+              <h2>
+                En el año 1995 Tortas Montero ingreso al libro de Record
+                Guinness por haber elaborado la torta más grande del mundo.
+              </h2>
+            </div>
+          </div>
+          <div class="main_content_2">
+            <div class="main_content_imgs">
+              <img src="./images/tortas-home.png" alt="" />
+            </div>
+            <div>
+              <a href="./Tortas-Curicanas.html">Pide tu Torta Curicana</a>
+              <p>La manera más fácil de llevar tus Tortas Curicanas.</p>
+            </div>
+          </div>
+          <div class="main_content_3">
+            <div class="main_content_imgs">
+              <img src="./images/pasteles-home.png" alt="" />
+            </div>
+            <div>
+              <a href="./Pasteleria.html">Pastelería</a>
+              <p>Conoce nuestros productos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contacts">
+        <div class="contact">
+          <h3>Dirección</h3>
+          <div class="contact_div">
+            <i class="fas fa-home"></i>
+            <p>
+              Calle Prat Nº 659 <br />
+              Curicó, Chile.
+            </p>
+          </div>
+        </div>
+        <div class="contact">
+          <h3>Contacto</h3>
+          <div class="contact_div">
+            <i class="fas fa-phone-alt"></i>
+            <p>(75) 2310149</p>
+          </div>
+        </div>
+        <div class="contact">
+          <h3>Redes Sociales</h3>
+          <div class="contact_icons">
+            <div class="icon">
+              <i class="fab fa-twitter"></i>
+            </div>
+            <div class="icon">
+              <i class="fab fa-facebook-f"></i>
+            </div>
+            <div class="icon">
+              <i class="fas fa-wifi"></i>
+            </div>
+          </div>
+        </div>
+        <div class="contact">
+          <h3>Dirección</h3>
+          <p class="contact_big">(75) 2310149</p>
+        </div>
+      </div>
+      <footer>
+        <p>
+          Copyright © 2014 · Todos los derechos reservados a Tortas Montero ·
+          Sitio Optimizado por Diseñamedios
+        </p>
+      </footer>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
