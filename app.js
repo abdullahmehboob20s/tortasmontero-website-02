@@ -1,5 +1,3 @@
-let sl_right_1 = document.querySelector(".sl_right_1");
-let sl_right_2 = document.querySelector(".sl_right_2");
 let modal = document.querySelector(".modal");
 let black_screen = document.querySelector(".black_screen");
 let modal_image = document.getElementById("modal_image");
